@@ -1,0 +1,25 @@
+databaseType = "PostgreSql"
+id = "4fb52ce4-0fcb-4757-a03a-ac33d568413a"
+name = "Orders_OCTO"
+
+[flyway]
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+validateMigrationNaming = true
+baselineVersion = "001_20240408180444"
+baselineOnMigrate = true
+
+  [flyway.check]
+  majorTolerance = 0
+
+[flywayDesktop]
+developmentEnvironment = "development"
+schemaModel = "schema-model"
+shadowEnvironment = "shadow"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[redgateCompare.postgresql.options.ignores]
+ignoreNewlinesInTextObjects = "off"
