@@ -1,7 +1,3 @@
-variable "Orders_Octo.Server.IP" {
-    value "52.191.250.148" {}
-}
-
 variable "Orders_Octo.Prod.DBName" {
     value "Orders_Octo_Prod" {}
 }
@@ -20,4 +16,8 @@ variable "Orders_Octo.Server.User" {
         machine = ["build"]
         role = ["sql-server-database"]
     }
+}
+
+variable "Orders_Octo.Server.IP" {
+    value "52.191.250.148:5432" {}
 }
