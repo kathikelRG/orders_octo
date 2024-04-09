@@ -13,3 +13,11 @@ variable "Orders_Octo.Build.DBName" {
         role = ["sql-server-database"]
     }
 }
+
+variable "Orders_Octo.Build.User" {
+    value "myadmin" {
+        environment = ["build"]
+        machine = ["build"]
+        role = ["sql-server-database"]
+    }
+}
