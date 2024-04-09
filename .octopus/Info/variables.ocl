@@ -14,7 +14,7 @@ variable "Orders_Octo.Build.DBName" {
     }
 }
 
-variable "Orders_Octo.Build.User" {
+variable "Orders_Octo.AllDbs.User" {
     value "myadmin" {
         environment = ["build"]
         machine = ["build"]
