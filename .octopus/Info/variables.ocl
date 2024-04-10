@@ -21,3 +21,11 @@ variable "Orders_Octo.Server.User" {
 variable "Orders_Octo.Server.IP" {
     value "52.191.250.148:5432" {}
 }
+
+variable "GitHub.Repo.ID" {
+    value "kathikelRG/#{RepoName}" {}
+}
+
+variable "RepoName" {
+    value "orders_octo" {}
+}
