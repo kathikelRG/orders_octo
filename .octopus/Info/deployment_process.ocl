@@ -2,7 +2,6 @@ step "info" {
     name = "Info"
 
     action {
-        environments = ["build"]
         is_required = true
         properties = {
             Flyway.Authentication.Method = "usernamepassword"
