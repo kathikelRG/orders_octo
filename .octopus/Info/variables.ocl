@@ -1,7 +1,3 @@
-variable "Orders_Octo.Prod.DBName" {
-    value "Orders_Octo_Prod" {}
-}
-
 variable "Orders_Octo.Server.IP" {
     value "52.191.250.148:5432" {}
 }
@@ -20,4 +16,8 @@ variable "Orders_Octo.Build.DBName" {
 
 variable "Orders_Octo.Server.User" {
     value "myadmin" {}
+}
+
+variable "Orders_Octo.Prod.DBName" {
+    value "orders_octo_prod" {}
 }
