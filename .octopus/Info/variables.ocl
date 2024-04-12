@@ -14,10 +14,10 @@ variable "Orders_Octo.Build.DBName" {
     value "Orders_Octo_Build" {}
 }
 
-variable "Orders_Octo.Server.User" {
-    value "myadmin" {}
-}
-
 variable "Orders_Octo.Prod.DBName" {
     value "orders_octo_prod" {}
+}
+
+variable "Orders_Octo.Server.User" {
+    value "postgres" {}
 }
